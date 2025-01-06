@@ -69,6 +69,10 @@ flutter:
     - assets/icon/kantong-pohon.png
     - assets/icon/notification-bell.png
     - assets/icon/info-blue.png
+    - assets/icon/Collaboratree.png
+    - assets/icon/CSR-kerjaSama.png
+    - assets/icon/Imbangi.png
+    - assets/icon/lokasi.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

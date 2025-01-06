@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:home_lh/colors/my_color.dart';
 
 class HomeMission extends StatelessWidget {
-  const HomeMission({super.key});
+  const HomeMission({super.key, required this.jalinKerjaSama});
 
   final List<Map<String, String>> treesData = const [
     {"label": 'Donasi Pohon', "value": '30M'},
@@ -11,10 +11,7 @@ class HomeMission extends StatelessWidget {
     {"label": 'Kampanye Alam', "value": '400K'},
   ];
 
-  void kerjaSama() {
-    print('jalan');
-  }
-
+  final VoidCallback jalinKerjaSama;
   void createCamp() {
     print('What?');
   }
@@ -82,7 +79,7 @@ class HomeMission extends StatelessWidget {
               Row(
                 children: [
                   FilledButton(
-                      onPressed: kerjaSama,
+                      onPressed: jalinKerjaSama,
                       style: FilledButton.styleFrom(
                           backgroundColor: MyColor.greenLH,
                           foregroundColor: Colors.white,
